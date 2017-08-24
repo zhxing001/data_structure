@@ -21,9 +21,12 @@
     <ClInclude Include="ListStack.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ListQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="maincpp.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

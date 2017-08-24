@@ -1,11 +1,32 @@
-#include"Double.h"
-#include"ListStack.h"
+//#include"Double.h"
+//#include"ListStack.h"
+#include "ListQueue.h"
 #include<iostream>
 using namespace std;
 int  main()
 {
+	
+	
+	
+	
+	
+	
+	
+	
+	//-------------【链式队列测试程序】----------------
+	cout << "test" << endl;
+	ListQueue<int> myQ;
+	myQ.enqueue(10);
+	myQ.enqueue(20);
+	myQ.enqueue(30);
+	cout << myQ.dequeue() << endl;
+	cout << myQ.getFront() << endl;
+	//-----------------end-----------------------------
+
+
+
 	//--------【链式栈的测试程序】-------------------------
-	ListStack<int> T;
+	/*ListStack<int> T;
 	T.Push(10);
 	cout << T.Top() << endl;
 	T.Push(20);
@@ -15,20 +36,8 @@ int  main()
 	T.Pop();
 	cout << T.Top() << endl;
 	T.MakeEmpty();
-	cout << T.Top() << endl;
-
-
-
-
-
-
-
-
-
-
-
-
-
+	cout << T.Top() << endl;*/
+	//------------------end-------------------------------
 
 
 	//-----------------【双向链表测试代码】------------------
@@ -57,7 +66,7 @@ int  main()
 	//cout << intList.first->rlink->rlink->rlink->rlink->llink->data << endl;
 	//cout << intList.first->rlink->rlink->rlink->rlink->llink->llink->data << endl;
 	//cout << intList.first->rlink->rlink->rlink->rlink->llink->llink->llink->data << endl;
-	//----------------------------------------------------------------------------------
+	//---------------------------------end-------------------------------------------------
 	
 
 
