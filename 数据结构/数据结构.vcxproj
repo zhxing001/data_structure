@@ -120,9 +120,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearchTree.h" />
+    <ClInclude Include="BinTree.h" />
     <ClInclude Include="Double.h" />
     <ClInclude Include="ListQueue.h" />
     <ClInclude Include="ListStack.h" />
+    <ClInclude Include="MaxHeap.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

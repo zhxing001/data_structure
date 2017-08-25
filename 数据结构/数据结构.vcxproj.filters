@@ -27,6 +27,12 @@
     <ClInclude Include="BinarySearchTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="BinTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

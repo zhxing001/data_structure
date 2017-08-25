@@ -2,13 +2,41 @@
 //#include"ListStack.h"
 //#include "ListQueue.h"
 //#include "BinTree.h"
-#include"BinarySearchTree.h"
+//#include"BinarySearchTree.h"
+#include"MaxHeap.h"
 #include<iostream>
 using namespace std;
+
 int  main()
 {
-	//------------------【二叉查找树测试程序】------------------
+
+
+	//-----------------【最大堆测试程序】---------------------------
 	cout << "test" << endl;
+	MaxHeap<int>  H(30);
+	
+	H.Push(6);
+	H.Push(5);
+	H.Push(8);
+	H.Push(90);
+	H.Push(1);
+	H.Push(3);
+	cout << H.Top() << "  ";
+	H.Pop();
+	cout << H.Top() << "  ";
+	H.Pop();
+	cout << H.Top() << "  ";
+	H.Pop();
+	cout << H.Top() << "  ";
+	H.Pop();
+	cout << H.Top() << "  ";
+	H.Pop();
+	cout << H.Top() << "  ";
+	//其实这个方法可以用来排序啊，而且是二分排序的速度
+    //-----------------------end---------------------------------
+
+	//------------------【二叉查找树测试程序】------------------
+	/*cout << "test" << endl;
 	BST<int> TREE;
 	Element<int> a, b, c, d, e, f, g;
 	a.key = 2;
@@ -30,18 +58,8 @@ int  main()
 	p=TREE.Search(f);
 	cout <<"递归找到的是："<< p->data.key<<endl;
 	p = TREE.IterSearch(f);
-	cout << "循环找到的是：" << p->data.key << endl;
+	cout << "循环找到的是：" << p->data.key << endl;*/
 	//----------------------end--------------------------------
-
-
-
-
-
-
-
-
-
-
 
 
 	//-----------------【二叉树测试程序】----------------
