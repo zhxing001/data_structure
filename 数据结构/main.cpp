@@ -1,11 +1,86 @@
 //#include"Double.h"
 //#include"ListStack.h"
-#include "ListQueue.h"
+//#include "ListQueue.h"
+//#include "BinTree.h"
+#include"BinarySearchTree.h"
 #include<iostream>
 using namespace std;
 int  main()
 {
-	
+	//------------------【二叉查找树测试程序】------------------
+	cout << "test" << endl;
+	BST<int> TREE;
+	Element<int> a, b, c, d, e, f, g;
+	a.key = 2;
+	b.key = 3;
+	c.key = 1;
+	d.key = 6;
+	e.key = 4;
+	f.key = 10;
+	g.key = 8;
+	cout << TREE.Insert(a) << endl;
+	cout << TREE.Insert(b) << endl;
+	cout << TREE.Insert(c) << endl;
+	cout << TREE.Insert(d) << endl;
+	cout << TREE.Insert(e) << endl;
+	cout << TREE.Insert(f) << endl;
+	cout << TREE.Insert(g) << endl;
+	TREE.dispaly();
+	BstNode<int> *p;
+	p=TREE.Search(f);
+	cout <<"递归找到的是："<< p->data.key<<endl;
+	p = TREE.IterSearch(f);
+	cout << "循环找到的是：" << p->data.key << endl;
+	//----------------------end--------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+	//-----------------【二叉树测试程序】----------------
+	/*BinaryTree<char>  tree;
+	TreeNode<char>  加, 减, 乘, 除, a, b, c, d, e;
+	加.data = '+';
+	减.data = '-';
+	乘.data = '*';                             
+	除.data = '/';
+	a.data = 'A';
+	b.data = 'B';
+	c.data = 'C';
+	d.data = 'D';
+	e.data = 'E';
+	           
+
+	tree.root = &加;
+	加.leftChild = &减;
+	加.rightChild = &e;
+	减.leftChild = &乘;
+	减.rightChild = &d;
+	乘.leftChild = &除;
+	乘.rightChild = &c;
+	除.leftChild = &a;
+	除.rightChild = &b;
+
+	cout << "中序遍历：";
+	tree.InOrder();
+	cout<<endl;
+	cout << "前序遍历：";
+	tree.PreOrder();
+	cout << endl;
+	cout << "后序遍历：";
+	tree.PostOrder();
+	cout << endl;
+	cout << "层序遍历：";
+	tree.LevelOrder();
+	cout << endl;*/
+	//-----------------end-------------------------------
 	
 	
 	
@@ -14,13 +89,13 @@ int  main()
 	
 	
 	//-------------【链式队列测试程序】----------------
-	cout << "test" << endl;
+	/*cout << "test" << endl;
 	ListQueue<int> myQ;
 	myQ.enqueue(10);
 	myQ.enqueue(20);
 	myQ.enqueue(30);
 	cout << myQ.dequeue() << endl;
-	cout << myQ.getFront() << endl;
+	cout << myQ.getFront() << endl;*/
 	//-----------------end-----------------------------
 
 

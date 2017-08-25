@@ -119,6 +119,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="Double.h" />
     <ClInclude Include="ListQueue.h" />
     <ClInclude Include="ListStack.h" />
