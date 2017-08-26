@@ -123,6 +123,8 @@
     <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="BinTree.h" />
     <ClInclude Include="Double.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="Graph_AdjList.h" />
     <ClInclude Include="HashMap.h" />
     <ClInclude Include="LinearMap.h" />
     <ClInclude Include="ListQueue.h" />

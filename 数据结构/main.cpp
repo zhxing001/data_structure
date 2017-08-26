@@ -5,18 +5,64 @@
 //#include"BinarySearchTree.h"     //二叉查找树
 //#include"MaxHeap.h"              //大顶堆
 //#include"LinearMap.h"          //线性映射
-#include"HashMap.h"                //哈希映射
+//#include"HashMap.h"                //哈希映射
                               
-#include<unordered_map>          //c++自己的hash映射(微软做的)
+//#include<unordered_map>          //c++自己的hash映射(微软做的)
 //以前用的hash_map  即将被移除了，这里用hash_map的话就会有错误，取而代之用这个库。
+//#include"Graph.h"
+
+#include"Graph_AdjList.h"
 #include<iostream>
 
 using namespace std;
 
 int  main()
 {
-	//-------------------【哈希映射测试程序】--------------------------
+	//------------------【邻接表做的图】--------------------------------
+	Graph_L<char> g(5);     //这里可以用定义的类模板 Vertex
+	char a = 'A';
+	char b = 'B';
+	char c = 'C';
+	char d = 'D';
+	char e = 'E';
+	g.addVertex(&a);
+	g.addVertex(&b);
+	g.addVertex(&c);
+	g.addVertex(&d);
+	g.addVertex(&e);
+	g.printVertex();
 	cout << "test" << endl;
+	g.addEdge(0, 1);
+	g.addEdge(0, 3);
+	g.addEdge(1, 0);
+	g.addEdge(1, 4);
+	g.addEdge(2, 4);
+	g.addEdge(3, 0);
+	g.addEdge(3, 4);
+	g.addEdge(4, 3);
+	g.addEdge(4, 1);
+	g.addEdge(4, 2);
+	g.printAdjList();
+	//-----------------------------end-----------------------------
+
+
+	//-------------------【邻接矩阵图测试程序】--------------------
+	//Graph G;
+	//G.addaVertex('A');  //0
+	//G.addaVertex('B');  //1
+	//G.addaVertex('C');  //2
+	//G.addaVertex('D');  //3
+	//G.addaVertex('E');  //4
+	//G.addEdge(0, 1);  
+	//G.addEdge(0, 3);  
+	//G.addEdge(1, 4);
+	//G.addEdge(2, 4);
+	//G.addEdge(3, 4);
+	//G.printMat();
+	//-------------------------end----------------------------------
+
+	//-------------------【哈希映射测试程序】--------------------------
+	/*cout << "test" << endl;
 	HashMap<string,int> H;
 	H.Put("marry", 999);
 	H.Put("zhxing", 99);
@@ -27,14 +73,14 @@ int  main()
 	cout <<"marry： "<< H.Get("marry") << endl;
 	cout << "xxx： " << H.Get("xxx") << endl;
 
-	cout << "使用c++自己的hash映射" << endl;
+	cout << "使用c++（微软）自己的hash映射" << endl;
 	unordered_map<string, int> h;
 	h["bill"] = 12;
 	h["tom"] = 22;
 	h["marry"] = 23;
 	h["tomeq"] = 232;
 	h["marew"] = 24;
-	cout << h["marry"];
+	cout << h["marry"];*/
 	
 	//---------------------end-----------------------------------------
 
