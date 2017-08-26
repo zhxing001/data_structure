@@ -33,6 +33,12 @@
     <ClInclude Include="MaxHeap.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LinearMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HashMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

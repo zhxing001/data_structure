@@ -1,18 +1,61 @@
-//#include"Double.h"
-//#include"ListStack.h"
-//#include "ListQueue.h"
-//#include "BinTree.h"
-//#include"BinarySearchTree.h"
-#include"MaxHeap.h"
+//#include"Double.h"        //双向链表
+//#include"ListStack.h"        //链式栈
+//#include "ListQueue.h"            //链式队列
+//#include "BinTree.h"         //二叉树
+//#include"BinarySearchTree.h"     //二叉查找树
+//#include"MaxHeap.h"              //大顶堆
+//#include"LinearMap.h"          //线性映射
+#include"HashMap.h"                //哈希映射
+                              
+#include<unordered_map>          //c++自己的hash映射(微软做的)
+//以前用的hash_map  即将被移除了，这里用hash_map的话就会有错误，取而代之用这个库。
 #include<iostream>
+
 using namespace std;
 
 int  main()
 {
+	//-------------------【哈希映射测试程序】--------------------------
+	cout << "test" << endl;
+	HashMap<string,int> H;
+	H.Put("marry", 999);
+	H.Put("zhxing", 99);
+	H.Put("lyzhen", 199);
+	H.Put("xxx", 234);
+	H.Put("zzs", 456);
 
+	cout <<"marry： "<< H.Get("marry") << endl;
+	cout << "xxx： " << H.Get("xxx") << endl;
+
+	cout << "使用c++自己的hash映射" << endl;
+	unordered_map<string, int> h;
+	h["bill"] = 12;
+	h["tom"] = 22;
+	h["marry"] = 23;
+	h["tomeq"] = 232;
+	h["marew"] = 24;
+	cout << h["marry"];
+	
+	//---------------------end-----------------------------------------
+
+
+
+
+
+
+
+	//---------------------【线性映射-很慢-测试程序】-------------------
+	/*LinearMap<string, int> lm;
+	lm.Put("bill", 99);
+	lm.Put("tom", 88);
+	lm.Put("lyzhen", 55);
+	lm.Put("anshubing", 82);
+	lm.Put("zhxing", 100);
+	cout << lm.Get("zhxing") << endl;  */
+	//--------------------------end-------------------------------------
 
 	//-----------------【最大堆测试程序】---------------------------
-	cout << "test" << endl;
+	/*cout << "test" << endl;
 	MaxHeap<int>  H(30);
 	
 	H.Push(6);
@@ -31,7 +74,7 @@ int  main()
 	H.Pop();
 	cout << H.Top() << "  ";
 	H.Pop();
-	cout << H.Top() << "  ";
+	cout << H.Top() << "  ";*/
 	//其实这个方法可以用来排序啊，而且是二分排序的速度
     //-----------------------end---------------------------------
 

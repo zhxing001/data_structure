@@ -88,6 +88,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -122,6 +123,8 @@
     <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="BinTree.h" />
     <ClInclude Include="Double.h" />
+    <ClInclude Include="HashMap.h" />
+    <ClInclude Include="LinearMap.h" />
     <ClInclude Include="ListQueue.h" />
     <ClInclude Include="ListStack.h" />
     <ClInclude Include="MaxHeap.h" />
