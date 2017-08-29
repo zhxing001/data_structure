@@ -9,7 +9,7 @@
                               
 //#include<unordered_map>          //c++自己的hash映射(微软做的)
 //以前用的hash_map  即将被移除了，这里用hash_map的话就会有错误，取而代之用这个库。
-//#include"Graph.h"
+#include"Graph.h"
 
 #include"Graph_AdjList.h"
 #include<iostream>
@@ -47,18 +47,20 @@ int  main()
 
 
 	//-------------------【邻接矩阵图测试程序】--------------------
-	//Graph G;
-	//G.addaVertex('A');  //0
-	//G.addaVertex('B');  //1
-	//G.addaVertex('C');  //2
-	//G.addaVertex('D');  //3
-	//G.addaVertex('E');  //4
-	//G.addEdge(0, 1);  
-	//G.addEdge(0, 3);  
-	//G.addEdge(1, 4);
-	//G.addEdge(2, 4);
-	//G.addEdge(3, 4);
-	//G.printMat();
+	Graph G;
+	G.addaVertex('A');  //0
+	G.addaVertex('B');  //1
+	G.addaVertex('C');  //2
+	G.addaVertex('D');  //3
+	G.addaVertex('E');  //4
+	G.addEdge(0, 1);  
+	G.addEdge(0, 3);  
+	G.addEdge(1, 4);
+	G.addEdge(2, 4);
+	G.addEdge(3, 4);
+	G.printMat();
+	G.DFS();     //深度优先搜索
+	G.BFS();
 	//-------------------------end----------------------------------
 
 	//-------------------【哈希映射测试程序】--------------------------
