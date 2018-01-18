@@ -125,6 +125,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="MyStack.h" />
     <ClInclude Include="myUtil.h" />
     <ClInclude Include="Queue.h" />
