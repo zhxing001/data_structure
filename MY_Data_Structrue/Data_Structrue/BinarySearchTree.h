@@ -91,6 +91,8 @@ inline MyBool BST<T>::Insert(const Element<T>& element)
 	return TRUE;
 }
 
+
+
 template<class T>
 inline BTreeNode<T>* BST<T>::Search(const Element<T>& element)
 {
